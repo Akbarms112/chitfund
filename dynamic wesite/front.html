@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bar</title>
+  <style>
+    /* Basic CSS for the navigation bar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #151615;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: rgb(6, 179, 92);
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  <a href="qr.html">GPAY</a>
+  <a href="tablebhaiya.html">Details</a>
+  <a href="paymentform.html">Payment</a>
+  <a href="index.php">Login</a>
+  
+</div>
+
+<!-- The rest of your webpage content goes here -->
+
+<html>
+<head>
+  <title>FUNDING SYSTEM</title>
+  
+
+  <img src="/code/erre.jpg" width="100%" height="500px" >
+ 
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>    
+  <script src="script.js"></script>
+
+<div class="funds-offer">
+  <img src="/code/depavali.jpg" width="">
+  <p>We provide depavali </p>
+
+</div>
+  
+
+
+
+
+  
+</body>
+      
+<style>  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #111010;
+    padding: 8px;
+  }
+  
+  th {
+    background-color:rgb(21, 206, 212);
+  }
+  
+  td[contenteditable="true"] {
+    background-color: #e7e1c7;
+    cursor: text;
+  }
+  </style>
+  <script>
+    // Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function() {
+  const table = document.getElementById("dynamic-table");
+
+  // Add a new row when user presses "Enter" key in the last cell
+  table.addEventListener("keydown", function(event) {
+    const target = event.target;
+    if (event.key === "Enter" && target.tagName === "TD" && target.parentNode.nextElementSibling === null) {
+      const newRow = document.createElement("tr");
+      const columns = table.querySelectorAll("thead th").length;
+
+      for (let i = 0; i < columns; i++) {
+        const cell = document.createElement("td");
+        cell.setAttribute("contenteditable", "true");
+        newRow.appendChild(cell);
+      }
+
+      table.querySelector("tbody").appendChild(newRow);
+      newRow.firstElementChild.focus(); // Move focus to the first cell of the new row
+    }
+  });
+});
+  </script>
+  </html>
+</body>
+
+</html>
