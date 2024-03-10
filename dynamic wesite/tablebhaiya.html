@@ -1,0 +1,219 @@
+<html>
+<head>
+  <title>FUNDING SYSTEM</title>
+  
+  <h1 style="color:black(255, 0, 0);"> <center>FUND DETAILS</center></h1>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <button onclick="getdata()">Click</button>
+  <script>
+  async function getdata(){
+    const data=await fetch("http://localhost/dynamic%20wesite/PHP-API/customres/read.php?id=1");
+  //  const data=await fetch("http://localhost/PHP-API/customer1/read.php?id=2");
+    const rest=data.json();
+    rest.then((res)=>{
+      console.log(res);
+      document.getElementById("sno").innerText=res.data.id
+      document.getElementById("name").innerText=res.data.name
+      document.getElementById("fundnum").innerText=res.data.fundnumber
+      document.getElementById("phon").innerText=res.data.phone
+      document.getElementById("addr").innerText=res.data.address
+      document.getElementById("amo").innerText=res.data.amount
+      document.getElementById("stat").innerText=res.data.status
+      document.getElementById("paym").innerText=res.data.payment
+
+    })
+    
+}</script>
+</head>  
+<body>
+  
+  <table id="dynamic-table">
+    <thead>
+      <tr>
+        
+        <th>S NO</th>
+        <th>NAME</th>
+        <th>FUND NUMBER</th>
+        <th>PHONE</th>
+        <th>ADDRESS</th>
+        <th>AMOUNT</th>
+        <th>STATUS</th>
+        <th>PAYMENT</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+   
+     
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+      <tr>
+        <td id="sno" contenteditable="true" style="text-align: center;"></td>
+        <td id="name" contenteditable="true"style="text-align: center;"></td>
+        <td id="fundnum" contenteditable="true"style="text-align: center;"></td>
+        <td id="phon" contenteditable="true"style="text-align: center;"></td>
+        <td id="addr" contenteditable="true"style="text-align: center;"></td>
+        <td id="amo" contenteditable="true"style="text-align: center;"></td>
+        <td id="stat"contenteditable="true"style="text-align: center;"></td>
+        <td id="paym" contenteditable="true"style="text-align: center;"></td>
+      </tr>
+    </tbody>
+  </table>
+ 
+  <script src="script.js"></script>
+</body>
+      
+<style>  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #111010;
+    padding: 8px;
+  }
+  
+  th {
+    background-color:rgb(21, 206, 212);
+  }
+  
+  td[contenteditable="true"] {
+    background-color: #e7e1c7;
+    cursor: text;
+  }
+  </style>
+  <script>
+    // Wait for the DOM to load
+
+document.addEventListener("DOMContentLoaded", function() {
+  const table = document.getElementById("dynamic-table");
+
+  // Add a new row when user presses "Enter" key in the last cell
+  table.addEventListener("keydown", function(event) {
+    const target = event.target;
+    if (event.key === "Enter" && target.tagName === "TD" && target.parentNode.nextElementSibling === null) {
+      const newRow = document.createElement("tr");
+      const columns = table.querySelectorAll("thead th").length;
+
+      for (let i = 0; i < columns; i++) {
+        const cell = document.createElement("td");
+        cell.setAttribute("contenteditable", "true");
+        newRow.appendChild(cell);
+      }
+
+      table.querySelector("tbody").appendChild(newRow);
+      newRow.firstElementChild.focus(); // Move focus to the first cell of the new row
+    }
+  });
+});
+  </script>
+  </html>
